@@ -5,7 +5,7 @@ export default async function Page() {
   const tasks = await getUncompletedTasks();
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-4">
       {tasks.map((task) => (
         <TaskCard key={task.id} task={task} />
       ))}
