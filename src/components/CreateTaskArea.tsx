@@ -20,8 +20,9 @@ export default function CreateTaskArea() {
       <input
         type="text"
         value={task.name}
-        className="w-full outline-none"
+        placeholder="テキストを入力"
         onChange={(e) => setTask({ ...task, name: e.target.value })}
+        className="w-full outline-none"
       />
       <div className="mt-1 text-xs">
         <input
